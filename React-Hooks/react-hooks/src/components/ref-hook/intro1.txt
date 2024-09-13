@@ -1,0 +1,39 @@
+What is useRef hook?
+The useRef hook is one of the built-in hooks in React. You can use it to persist or preserve values between re-renders. 
+The useRef hook takes an initial value of any type as argument and returns an object with a single current property.
+
+const ref = useRef(initialValue);
+
+Note : 
+-If you don't pass an initial value, the current property will be undefined.
+-The value of the ref object remains the same between re-renders
+-Updating the value of the ref object doesn’t trigger a re-render
+
+
+When to use React useRef hook?
+1. Accessing DOM Elements: useRef is often used to directly access a DOM element in your JSX. This is useful for things like focusing on an input field upon a component mounting.
+
+2. Storing Mutable Data: It allows you to store data that persists across renders but doesn't cause a re-render when updated, unlike useState.
+
+3. Referencing Interval or Timeout IDs: Useful for keeping track of setInterval or setTimeout IDs, so you can clear them (like with clearInterval or clearTimeout) when needed.
+
+4. Tracking Previous State or Props: It helps in keeping track of a component's previous state or props to compare with current values.
+
+5. Implementing Custom Hooks: useRef can be used within custom hooks to retain stateful values or references across renders without triggering re-renders.
+
+
+
+**Use-cases of refs in React :: 
+
+-Interacting with input elements: You can use refs to access input elements and implement functionalities like focus and auto-completion.
+-Interacting with third-party UI libraries: You can use refs to interact with third-party UI libraries that might be difficult to access using standard DOM methods. For instance, if you use a third-party library to generate sliders, you can use ref to reference the sliders' DOM element without accessing the library's source code.
+-Media playback: You may also access media assets like images, audio, and videos using refs. For instance, auto-playing videos and lazy loading images when an element enters the viewport.
+-Complex animation triggering: Traditionally, CSS keyframes or timeouts are used to determine when to initiate animations. You can also use refs to observe DOM elements and determine when to start an animation.
+
+
+
+**You shouldn't use refs in the following cases:
+
+-Declarative cases: As highlighted above, React is declarative by design. Do not use refs if you can write declarative code.
+-Elements affecting state: Mutating a ref doesn't re-render a component. Therefore, don't use refs when state changes need to trigger a re-render.
+-Accessing functional components: You can reference DOM elements and class components using refs because they have instances. On the other hand, functional components do not have instances. Therefore, the code below will not work.

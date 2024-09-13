@@ -1,0 +1,31 @@
+#What is JSX ?
+.JSX stands for JavaScript XML. JSX is basically a syntax extension of JavaScript.
+.React JSX helps us to write HTML in JavaScript and forms the basis of React Development.
+.JSX creates an element in React that gets rendered in the UI. 
+.It is transformed into JavaScript functions by the compiler at runtime.
+
+
+#Why JSX ?
+.It is faster than normal JavaScript as it performs optimizations while translating to regular JavaScript.
+.It makes it easier for us to create templates.
+.Instead of separating the markup and logic in separate files, React uses components for this purpose.
+.As JSX is an expression, we can use it inside of if statements and for loops, assign it to variables, 
+accept it as arguments, or return it from functions.
+
+const example = "JSX"
+const ele = <div>This component uses {example} </div>
+
+
+#Attributes in JSX ?
+JSX allows us to use attributes with the HTML elements just like we do with normal HTML. 
+JSX uses the camelcase convention for attributes
+    -The change of class attribute to className
+    -Creation of custom attributes: prefixed by data-* attribute
+
+
+
+#Rules to Write JSX 
+
+Always return a single Root Element
+Close all the tags
+Use camelCase convention wherever possible

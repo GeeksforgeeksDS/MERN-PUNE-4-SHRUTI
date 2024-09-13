@@ -1,0 +1,18 @@
+#ReactJS Virtual DOM
+
+React JS Virtual DOM is an in-memory representation of the DOM. DOM refers to the Document Object Model that represents the 
+content of XML or HTML documents as a tree structure so that the programs can be read, accessed and changed in the document structure, style, and content.
+
+#DOM : 
+DOM stands for ‘Document Object Model’.
+DOM is represented as a tree data structure. It contains a node for each UI element present in the web document.
+Allows web developers to modify content through JavaScript
+
+#Disadvantages of real DOM :
+Every time the DOM gets updated, the updated element and its children have to be rendered again to update the UI of our page.
+Recalculating the CSS and changing the layouts involves complex algorithms, and they do affect the performance.
+
+#Virtual DOM
+React uses Virtual DOM exists which is like a lightweight copy of the actual DOM(a virtual representation of the DOM)
+So each time there is a change in the state of our application, the virtual DOM gets updated first instead of the real DOM.
+

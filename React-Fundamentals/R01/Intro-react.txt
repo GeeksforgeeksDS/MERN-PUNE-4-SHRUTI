@@ -1,0 +1,56 @@
+#What is React ?
+
+React is a JavaScript library for building user interfaces.
+
+React is used to build single-page applications.
+
+React allows us to create reusable UI components.
+
+
+#SSR::
+
+
+#How Websites got Evolved?
+
+More interactivity
+Fully fledged web applications
+Morder appln. on browser run like native apps
+More interactivity ->  More JavaScript
+Increased complexity -> More bugs
+Manual updation of DOM
+
+To summ-up above React was introduced.
+
+
+#CSR::
+
+
+#React : -
+
+React is an open source JS lib for creating UI.
+It's an lib. not a framework.
+Used for handling "view" layer of the appln.
+Allows us to create large web appln. that changes data without reloading the web page.
+
+#MVC
+
+#MVC with MERN :-
+MERN Stack is a JavaScript Stack short for MongoDB, Express, React, and Node.js
+
+1. Model:
+
+-In the Model layer, databases play a critical role. 
+-MongoDB is a popular choice due to its flexibility and scalability. 
+-When integrated with Mongoose, a JavaScript framework, developers can define data models 
+and interact with MongoDB in a structured manner.
+
+2. View:
+
+-React serves as the front-end part of the MVC setup, efficiently rendering components. 
+-Templating languages such as EJS and handlebars can be used with Node.js and Express.
+
+3. Controller:
+
+-The Controller, often powered by Node.js and Express.js, handles application logic efficiently.
+-Express simplifies routing and HTTP requests, while Node.js, with its non-blocking, 
+event-driven architecture, manages real-time and data-intensive applications.

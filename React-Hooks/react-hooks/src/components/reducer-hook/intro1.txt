@@ -1,0 +1,23 @@
+The reducer function
+The JavaScript reduce() method executes a reducer function on each element of the array and returns a single value. 
+The reduce() method accepts a reducer function, which itself can accept up to four arguments. The code snippet below illustrates how a reducer works:
+
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+[2, 4, 6, 8].reduce(reducer)
+
+
+const [count, dispatch] = useReducer(reducer, initialState);
+
+function reducer(state, action) { }
+
+dispatch({ type: 'increment/decrement' })
+
+
+_______________________________________________________________
+# When not to use the useReducer Hook ::
+
+1. When your application needs a single source of truth
+2. When you want a more predictable state
+3. When state-lifting to the top-level component no longer suffices
+4. When you need to persist state even after a page refresh

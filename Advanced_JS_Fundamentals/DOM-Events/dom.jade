@@ -1,0 +1,49 @@
+The Document Object Model (DOM) is an application programming interface (API) for manipulating HTML documents.
+
+The DOM represents an HTML document as a tree of nodes. The DOM provides functions that allow you to add, 
+remove, and modify parts of the document effectively.
+
+Note that the DOM is cross-platform and language-independent ways of manipulating HTML and XML documents.
+
+The DOM represents an HTML document as a hierarchy of node:
+<html>
+    <head>
+        <title>JavaScript DOM</title>
+    </head>
+    <body>
+        <p>Hello DOM!</p>
+    </body>
+</html>
+
+
+
+****************************************************************************************************************
+The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+
+the DOM specifies that the querySelectorAll method
+in below code snippet must return a list of all the <p> elements in the document:
+
+const paragraphs = document.querySelectorAll("p");
+alert(paragraphs[0].nodeName);
+
+#All of the properties, methods, and events available for manipulating and creating web pages are organized into objects. 
+
+
+#The DOM is not part of the JavaScript language, but is instead a Web API used to build websites. 
+#JavaScript can also be used in other contexts. 
+#For example, Node.js runs JavaScript programs on a computer, but provides a different set of APIs, 
+#and the DOM API is not a core part of the Node.js runtime.
+
+
+
+****************************************************************************************************************
+When you create a script, whether inline in a <script> element or included in the web page, you can immediately 
+begin using the API for the document or window objects to manipulate the document itself, 
+or any of the various elements in the web page
+
+console.log();
+
+
+<body onload="console.log('Welcome to my home page!');">
+  …
+</body>

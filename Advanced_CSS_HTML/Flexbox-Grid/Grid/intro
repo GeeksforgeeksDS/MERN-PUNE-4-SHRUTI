@@ -1,0 +1,6 @@
+CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-based layout system that, compared to any web layout system of the past, completely changes the way we design user interfaces
+
+
+Grid is the very first CSS module created specifically to solve the layout problems we’ve all been hacking our way around for as long as we’ve been making websites.
+
+To get started you have to define a container element as a grid with display: grid, set the column and row sizes with grid-template-columns and grid-template-rowsprimary

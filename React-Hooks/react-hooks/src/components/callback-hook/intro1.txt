@@ -1,0 +1,27 @@
+What is the useCallback hook?
+
+The useCallback hook is a built-in hook in React that lets you memoize a callback function by preventing it from being recreated on every render. 
+In simple terms, it means that the callback function is cached and does not get redefined on every render. 
+
+
+ Memoization is an optimization technique that stores results from a computational event (like a function) in the cache, and on subsequent calls, 
+ it fetches the results directly from the cache without recomputing the result.
+
+
+useCallback(function, dependencies)
+
+const updatedFunction = useCallback(
+  (args) => {
+                            //action goes in here	
+  },
+  [dependencies] 
+);
+
+
+_______________________________________________________________
+When to use the useCallback hook :::
+
+-When you need to pass a function as props to a child component.
+-If you have a function that is expensive to compute and you need to call it in multiple places.
+-When dealing with functional components.
+-When you are working with a function that relies on external data or state.

@@ -1,0 +1,47 @@
+-Let's suppose we have a design system where we have buttons that can be different colours,
+ each button should look the same apart from the different background colour,
+  the hover and active states are slightly darker variants of their base colour.
+
+
+
+
+First let's make a function that will mix any colour with black at a set percentage.
+@function --darken(--base, --percent) {
+  @return color-mix(in srgb, var(--base), #000 var(--percent));
+}
+
+
+we have a function that can darken our base colours let's make a mixin that will make our default button style with the hover and active states, we can use nesting in the mixin to make this easier.
+
+@mixin --button(--color: #174D7C) {
+  background-color: var(--color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: --darken(var(--color), 5%);
+  }
+
+  &:active {
+    background-color: --darken(var(--color), 10%);
+  }
+}
+
+
+let's make three buttons one using the default colour then a green and also an orange one
+
+.primary-btn {
+  @apply --button
+}
+
+.green-btn {
+  @apply --button(#6F9F9C)
+}
+
+.orange-btn {
+  @apply --button(#FE5F55)
+}

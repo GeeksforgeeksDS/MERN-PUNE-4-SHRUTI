@@ -1,0 +1,26 @@
+How does the useEffect Hook get executed?
+
+1. Initial render/mounting: When a functional component that contains a useEffect Hook is initially rendered, the code inside the useEffect block runs after the initial render of the component. This is similar to componentDidMount class components
+2. Subsequent renders: You can pass a dependency array as the second argument to the useEffect Hook. This array contains variables or values that the effect depends on. Any change in these variables will re-render the component. If no dependency array is given, the effect will run on every render
+3. Cleanup function: You can also run an optional cleanup function inside the effect. It is used to clean up any resources or subscriptions created by the effect when the component is unmounted or when the dependencies change
+4. Unmounting: If a cleanup function is present, it is run and then the component is unmounted from the DOM
+
+Note : If one or more useEffect declarations exist for the component, React checks each useEffect to determine whether it fulfills the conditions to execute the implementation (the body of the callback function provided as the first argument). 
+        In this case, “conditions” mean one or more dependencies have changed since the last render cycle.
+
+
+useEffect(
+    () => {
+                        // execute side effect
+    },
+
+    return () => {
+                        // return optional function for cleanup, in this case acts like componentWillUnmount
+    }
+    
+    [
+                        // optional dependency array, 0 or more entries
+    ] 
+)
+
+dependency array, serves the purpose of indicating the variables upon which the effect relies

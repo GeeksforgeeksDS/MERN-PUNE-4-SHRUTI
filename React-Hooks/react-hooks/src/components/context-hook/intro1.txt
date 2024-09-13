@@ -1,0 +1,15 @@
+When do you need context?
+The main idea of using the context is to allow your components to access global data and re-render when that global data is changed. 
+Context solves the props drilling problem: when you have to pass down props from parents to children.
+
+You can hold inside the context:
+
+global state
+theme
+application configuration
+authenticated user name
+user settings
+preferred language
+a collection of services
+
+Note: using the useContext() in every consumer — increases complexity.

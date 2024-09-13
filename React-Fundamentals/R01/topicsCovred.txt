@@ -1,0 +1,15 @@
+React Intro
+Folder structure
+components - class and function based
+JSX
+props
+state & setState
+destructuring of prop and state
+event handling 
+binding event handlers
+methods as a props
+Conditional rendering 
+List rendering 
+Lists and keys
+Basics of Form handling
+---------------------------------R01----------------------------

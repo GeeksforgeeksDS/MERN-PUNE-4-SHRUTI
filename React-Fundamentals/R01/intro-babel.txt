@@ -1,0 +1,5 @@
+#What is babel?
+
+-Babel is a very famous transpiler that basically allows us to convert the JavaScript code into the one that the browser understands. 
+-Transpiler is a tool that is used to convert source code into another source code that is of the same level.
+-We use Babel with React to transpile the JSX code into simple React functions that can be understood by browsers.

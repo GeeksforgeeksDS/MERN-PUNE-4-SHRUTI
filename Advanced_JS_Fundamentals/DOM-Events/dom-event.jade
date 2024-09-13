@@ -1,0 +1,91 @@
+When a JavaScript event occurs, the event is propagated or travels either from the target where 
+the event occurred to the outermost element in the DOM or vice versa.
+
+
+Example : you click a button on a page. By clicking the button, you've also
+ clicked its parent element and any element the button is inside within the DOM hierarchy.
+
+
+
+
+********************************************************************************************************************
+
+
+#Event Bubbling
+This is when the event is first registered on the target (or specified element) 
+on which the event happened, and then registered outwards to the parent and onwards to the outermost element.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event bubbling DEMO</title>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="inner">
+              <button id='btn'>Click Here</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+********************************************************************************************************************
+#Event Capturing
+Event capturing is the opposite of event bubbling. 
+The event starts from the outermost ancestor element and travels down the DOM tree to the target element.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event bubbling DEMO</title>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="inner">
+              <button id='btn'>Click Here</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+********************************************************************************************************************
+#Event stopPropagation() Method
+
+event bubbling registers an event on an element and continues registering the event all the 
+way to the outermost ancestor element.
+
+what if you don't want the event to register on all the ancestors?
+You can use this method to prevent the event from propagating through the whole DOM.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event bubbling DEMO</title>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="inner">
+              <button id='btn'>Click Here</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+button.addEventListener('click', function(event) {
+  event.stopPropagation()
+  console.log('Click on button')
+})
+
+innerDiv.addEventListener('click', function() {
+  console.log('Click on inner Div')
+})
+
+outerDiv.addEventListener('click', function() {
+  console.log('Click on outer Div')
+})

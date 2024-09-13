@@ -1,0 +1,34 @@
+How to Work with Attributes of DOM Elements
+
+1. getAttribute Method: 
+
+<img src="image.jpg" alt="An example image">
+const imageElement = document.querySelector('img')
+console.log(imageElement.getAttribute('src'))
+
+
+2. setAttribute Method: 
+
+<img src="image.jpg" alt="An example image">
+const imageElement = document.querySelector('img')
+
+console.log("BEFORE:", imageElement.getAttribute('src'))
+imageElement.setAttribute('src', 'new-image.jpg')
+console.log("AFTER:", imageElement.getAttribute('src'))
+
+3. removeAttribute Method: 
+
+<img src="image.jpg" alt="An example image" height="200">
+const imageElement = document.querySelector('img')
+
+console.log("BEFORE:", imageElement.getAttribute('height'))
+imageElement.removeAttribute('height', '200')
+console.log("AFTER:", imageElement.getAttribute('height'))
+
+
+4. hasAttribute Method: 
+<img src="image.jpg" alt="An example image" height="200">
+const imageElement = document.querySelector('img')
+
+console.log("HEIGHT", imageElement.hasAttribute('height'))
+console.log("WIDTH", imageElement.hasAttribute('width'))

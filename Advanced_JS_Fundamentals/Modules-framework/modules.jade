@@ -1,0 +1,34 @@
+JavaScript modules allow us to break up your code into separate files.
+
+This makes it easier to maintain a code-base.
+
+Modules are imported from external files with the import statement.
+
+Modules also rely on type="module" in the <script> tag.
+
+
+<script type="module">
+import message from "./message.js";
+</script>
+
+
+Modules with functions or variables can be stored in any external file.
+
+There are two types of exports: 
+-Named Exports 
+-Default Exports.
+
+
+
+
+
+***********************************************************************************************************
+#SUMMARY -
+
+1. A module is a file. To make import/export work, browsers need <script type="module">.
+2. Modules have their own, local top-level scope and interchange functionality via import/export.
+3. Modules always use strict.
+4. Module code is executed only once. Exports are created once and shared between importers.
+
+Note :  In production, people often use bundlers such as Webpack to bundle modules together
+        for performance and other reasons.

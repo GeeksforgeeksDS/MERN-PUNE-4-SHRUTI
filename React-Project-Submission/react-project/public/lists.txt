@@ -1,0 +1,24 @@
+1. To Do App / Calendar Application
+2. Calculator
+3. Snapshot - Gaurav -> 10
+4. E-Commerce - Nilam
+5. Emoji Search -  Disha
+6. Blog App -  Vijay ->  13
+7. Weather App -  Yuvraj
+8. Real-time chat app
+9. Book Finder Application - Ajay
+10. Password Generator - Gaurav
+11. React Stopwatch
+12. Gaming  App
+
+________________________________________________________________________
+13. Pomodoro Clock -  time management tool -  Vijay
+14. Social Media Dashboard
+15. Movie Search Application
+16. Blog Platform with User Authentication
+17. Fitness Tracker with Progress Graphs
+
+_________________________________________________________________________
+18. Real-time Collaborative Document Editor
+19. Real-time Sports Score Website
+20. Travel Booking System

@@ -1,0 +1,15 @@
+styling & CSS basics
+component lifecycle methods
+component updating lifecycle methods
+fragments
+Pure components
+memo
+refs
+refs with class compo.
+forward refs
+portals
+error boundary
+**HOC's
+**render props 
+**context
+http & react (GET, POST)

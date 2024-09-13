@@ -1,0 +1,22 @@
+What is the useState Hook?
+useState is React Hook that allows you to add state to a functional component. 
+It returns an array with two values: the current state and a function to update it.
+
+const [state, setState] = useState(initialValue);
+
+
+Note  : useState return an array? This is because, compared to an object, an array is more flexible.
+
+___________________________________________________________________________________________________________
+# step by step how rect work under the hood:
+
+1.React initializes the list of Hooks and the variable that keeps track of the current Hook
+2.React calls your component for the first time
+3.React finds a call to useState, creates a new Hook object (with the initial state), changes the current Hook variable to point to this object, adds the object to the Hooks list, and returns the array with the initial state and the function to update it
+4.React finds another call to useState and repeats the actions of the previous step, storing a new Hook object and changing the current Hook variable
+5.The component state changes
+6.React sends the state update operation (performed by the function returned by useState) to a queue to be processed
+7.React determines it needs to re-render the component
+8.React resets the current Hook variable and calls your component
+9.React finds a call to useState, but this time, since there’s already a Hook at the first position of the list of Hooks, it just changes the current Hook variable and returns the array with the current state, and the function to update it
+10.React finds another call to useState and because a Hook exists in the second position, once again, it just changes the current Hook variable and returns the array with the current state and the function to update it
